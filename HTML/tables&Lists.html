@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            
+        }
+        th,td{
+            padding: 10px 20px;
+            text-align: center;
+            background-color: green;
+        }
+        table{
+            /* border-spacing: 0px; */
+            margin:auto;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+  Syntax:
+  
+  <table>
+    <tr>
+        <th>Heading 1</th>
+        <th>Heading 2</th>
+    </tr>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+  </table>
+
+--> 
+
+<table  width="500px" bgcolor="lightblue" >
+    <tr style="width: 100px;" bgcolor="aqua">
+        <th bgcolor="red">Name</th>
+        <th >Age</th>
+        <th >City</th>
+    </tr>
+    <tr  style="width: 300px;">
+        <td>John Doe</td>
+        <td rowspan="2">30</td>
+        <td>New York</td>
+    </tr>
+    <tr >
+        <td>Jane Smith</td>
+        <!-- <td>30</td> -->
+        <td>Los Angeles</td>
+    </tr>
+</table>
+
+
+<ol style="list-style-type: upper-alpha;" start="27" >
+    <li>Ordered List Item 1</li>
+    <li>Ordered List Item 2</li>
+    <li>Ordered List Item 3</li>
+</ol>
+
+<ul style="list-style-type: none;">
+    <li>Unordered List Item 1</li>
+    <li>Unordered List Item 2</li>
+    <li>Unordered List Item 3</li>
+</ul>
+<ol>
+    <li>HTML
+        <ol>
+            <li>Intro</li>
+            <li>Core Comp</li>
+            <li>TAbles</li>
+        </ol>
+    </li>
+    <li>CSS</li>
+    <li>JS</li>
+</ol>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Hyper Text Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheet</dd>
+    <dt>JS</dt>
+    <dd>JavaScript</dd>
+</dl>
+</body>
+</html>

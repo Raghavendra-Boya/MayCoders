@@ -37,6 +37,61 @@
         a:hover{
             color: aqua;
         }
+
+        section{
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        form{
+            width:60%;
+            padding: 40px;
+            background-color: rgb(87, 88, 88);
+        }
+        fieldset{
+            padding: 25px;
+            border-radius: 15px;
+            border: 3px solid black;
+        }
+        .heading{
+            text-align: center;
+           color: blue;
+           width: 100%;
+        }
+        p{
+            text-align: center;
+            color: white;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+        }
+        .box{
+display: flex;
+flex-grow:1;
+min-width: 250px;
+flex-direction: column;
+
+        }
+
+        label{
+            font-weight: bold;
+            color: rgb(0, 0, 25);
+        }
+
+        input{
+            padding:14px;
+            outline: none;
+            border: 2px solid green;
+            border-radius: 10px;;
+        }
     </style>
 </head>
 <body>
@@ -48,9 +103,46 @@
                 <li><a href="#">About</a></li>
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href=".contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+
+<section style="height: 1000px; background-color: coral;"></section>
+
+    <section class="contact">
+        <form action="#">
+            <h1 class="heading">Contact Me</h1>
+            <p>feel frre to contact me for Projects, collaborations, internshios, ot Jpb Opportumities.</p>
+
+            <fieldset>
+          
+                <legend>Personal Details</legend>
+               <div class="row">
+                 <div class="box">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" placeholder="Enter Your Name" id="fullname" name="fullname" required>
+
+                </div>
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Your Email" id="email" name="email" required>
+                </div >
+                <div class="box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" placeholder="Enter Your Phone Number" id="phone" name="phone" required pattern="[0-9]{10}">
+
+                </div>
+                <div class="box">
+                    <label for="website">Portfolio Website</label>
+                    <input type="url" placeholder="Enter Your Portfolio URL" id="website" name="website">
+                </div>
+               </div>
+            </fieldset>
+        </form>
+    </section>
+
+
 </body>
 </html>

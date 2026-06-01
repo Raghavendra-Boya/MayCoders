@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to Apply CSS</title>
+    <link rel="stylesheet" href="./sryle.css">
+    <style>
+        p{
+            color: blue;
+        }
+        a{
+            color: rgb(0, 255, 0);
+            font-size: 30px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .para{
+            color:aqua;
+        }
+        #demo{
+            background-color: black;
+        }
+
+        .para{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        #demo1{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--
+    Ways to apply css:
+    1. Inline CSS
+    2. Internal CSS
+    3. External CSS
+
+    1. Inline CSS: It is used to apply a unique style to a single HTML element. It is not recommended for large projects as it can make the code messy and difficult to maintain.
+    Example:
+    <p style="color: red;">This is an inline CSS example.</p>
+
+    advantages:
+    1. quck styling
+    2. easy for single elements
+    3. no seperate css file needed
+
+    disadvantages:
+    1. not reusable
+    2. line of code increases 
+    3. difficult to maintain
+    4. application performnace issues
+
+2. Internal CSS: It is used to define a style for a single HTML document. It is placed within the <style> tag in the head section of the HTML document.
+    
+    Example:
+    <style>
+        p {
+            color: blue;
+        }
+
+    advantages:
+    1. better than inline css
+    2. reusable code in samefile
+    3. suitable for small problects
+
+    disadvantages:
+    1. connt reuse in other pages
+    2. not suitable for big projects
+    3. can make the HTML file larger
+
+3. External CSS: It is used to define a style for multiple HTML documents. It is placed in a separate file with a .css extension and linked to the HTML document using the <link> tag in the head section.
+    Example:
+    <link rel="stylesheet" href="style.css">
+    advantages:
+    1. reusable code across multiple pages
+    2. better organization
+    3. faster loading times
+
+    disadvantages:
+    1. additional HTTP request
+    2. require seperate file
+
+
+
+    selectors:
+    a selector is udefd tp target HTML element and pply styles
+
+    types od selector:
+    1. global selector(*)
+         selects all ELements in HTML file
+         syntax:
+            *{
+                property: value;
+            }
+    2. element selector(tag name)
+        
+            selects all elements of a specific type
+            syntax:
+                element{
+                    property: value;
+                }
+    3. class selector(.class name):
+            selects all elements with a specific class attribute
+            syntax:
+                .class{
+                    property: value;
+                }
+        use case:
+        1. when you want to apply the same style to multiple elements
+
+    4. id selector(#id name):
+            selects a single element with a specific id attribute
+            syntax:
+                #id{
+                    property: value;
+                }
+
+        use case:
+        1. when you want to apply a unique style to a single element
+    5. group selector(,):
+    apply same styles to mutiple selectors
+
+    -->
+
+        <a href="./index.html" style="color:yellow">Index Page</a>
+        <a href="./home.html">Home Page</a>
+        <a href="./contact.html">Contact Page</a>
+
+
+
+    <p class="para" id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
+    <p class="para graph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
+    <p id="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
+    <h1 id="demo1">I am H1</h1>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>

@@ -1,4 +1,69 @@
- a{
-            color: red;
-            font-size: 30px;
+
+
+        .btn{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
+
+        .btn:hover{
+            background-color: rgb(66, 66, 213);
+            width: 150px;
+
+        }
+        input:focus{
+            background-color: rgb(66, 66, 213);
+            color: white;
+            outline: none;
+            border: 2px solid blue;
+        }
+
+        a:visited{
+            color: red;
+        }
+
+
+        li:nth-child(2n+1)
+        {
+            color: red;
+        }
+
+        button:not(.logout){
+            background-color: green;
+        }
+        input:checked{
+            background-color: green;
+            width: 30px;
+            height: 30px;
+        }
+.details{
+    display: none;
+}
+#show:checked ~ .details{
+    display: block;
+}
+#show{
+    display: none;
+}
+/* p::first-line{
+    font-size:40px;
+    color: red;
+} */
+p::after{
+    content:"Hello World";
+}
+p::selection{
+    background-color: yellow;
+    color: aqua;
+}
+
+div>p{
+    color:rgb(218, 32, 165);
+}
+
+p~section{
+    background-color: rgb(32, 218, 44);
+}

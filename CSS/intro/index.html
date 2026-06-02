@@ -6,13 +6,13 @@
     <title>Ways to Apply CSS</title>
     <link rel="stylesheet" href="./sryle.css">
     <style>
-        p{
+        /* p{
             color: blue;
-        }
-        a{
+        } */
+        /* a{
             color: rgb(0, 255, 0);
             font-size: 30px;
-        }
+        } */
         *{
             margin: 0;
             padding: 0;
@@ -126,6 +126,48 @@
     5. group selector(,):
     apply same styles to mutiple selectors
 
+
+    6. pseudo class selector(:)
+    pseudo class selctor an element based on the condition or state
+
+    syntax:
+    selector:pseudo-class{
+        property: value;
+    }
+1. :hover
+applied when mouse is placed on element
+2. :focus
+applied when element is focused
+3. visited
+applied to links that have been visited
+4. :first-child
+applied to the first child of a parent element
+5. :nth-child(n)
+applied to the nth child of a parent element
+6. not()
+applied to elements that do not match a specified selector
+7. checked
+applied to input elements that are checked
+
+
+7. pseudo element selector(::)
+pseudo element selector is used to style specific parts of an element, such as the first letter or first line of a paragraph.
+Syntax:
+selector::pseudo-element{
+    property: value;
+}
+
+1. ::first-letter
+applied to the first letter of an element
+
+
+8. combination selector:
+1. child selector:
+     1. descendent child selector(space)
+     2. direct child selector(>)
+2. sibling selectors:
+        1. adjacent sibling selector(+)
+        2. general sibling selector(~)
     -->
 
         <a href="./index.html" style="color:yellow">Index Page</a>
@@ -139,8 +181,51 @@
     <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
     <p id="demo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, officiis!</p>
     <h1 id="demo1">I am H1</h1>
-    
+    <button class="btn">Login</button>
 
+    <input type="text" placeholder="Enter your name">
+
+    <a href="#">Before Visit</a>
+    <a href="$">After Visit</a>
+
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ul>
+
+    <button>Save</button>
+    <button>Edit</button>
+    <button>Login</button>
+
+    <button class="logout">Logout</button>
+    <input type="checkbox" id="show">
+    <label for="show">Read more</label>
+
+    <div class="details">This is Hidden Text</div>
+    
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, nam.</p>
+
+
+
+    <div>
+        <p>Direct Child of div</p>
+        <section>
+            <p>Descendent Child of div</p>
+        </section>
+        <section>
+            <p>Descendent Child of div</p>
+        </section>
+        <p>Sbling-1</p>
+        <p>Sbling-2</p>
+        <section>
+            <p>Descendent Child of div</p>
+            <section>
+            <p>Descendent Child of div.........................</p>
+        </section>
+        </section>
+
+    </div>
     <script src="./app.js"></script>
 </body>
 </html>

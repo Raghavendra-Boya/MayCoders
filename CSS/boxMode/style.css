@@ -1,0 +1,37 @@
+.btn{
+    padding:10px 20px;
+    border:3px solid blue;
+    border-radius: 50%;
+    margin: auto;
+    width: 100%;
+}
+.box1{
+    margin: 20px;
+    padding: 40px;
+    border: 10px dotted red;
+    box-sizing: border-box;
+}
+.box2{
+    margin-top: 120px;;
+}
+
+.card{
+    width:300px;
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius:10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px black;
+}
+
+.card>img{
+    width:100%;
+    border-radius:10px;
+}
+.card button:hover{
+    background-color: rgb(66, 66, 213);
+    /* width: 150px; */
+    box-shadow: 0px 0px 10px 10px black;
+
+}

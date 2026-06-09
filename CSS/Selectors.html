@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card:hover>div p{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--combinationation selectors
+    1. child selectors
+
+    company
+        1. CEO
+        2. Manager
+        3. HR
+        4. Finance
+        5. Admin
+    -->
+    <div class="comapany">
+        <h1>CEO</h1>
+        <div class="manager">
+            <h1>Manager</h1>
+            <div class="teamlead">
+                <h1>Team Lead</h1>
+                <p>Devloper-1</p>
+                <p>Devloper-2</p>
+
+            </div>
+            <p>Tester</p>
+        </div>
+        <div class="hr">
+            <h1>HR manager</h1>
+            <p>Requiter-1</p>
+            <p>Requiter-2</p>
+
+        </div>
+        
+        
+    </div>
+.manger ~ .hr{
+
+}
+<div class="comapany1">
+    
+    <h2 class="manager">Manager</h2>
+    <h2 class="hrr">HR</h2>
+    <h2 class="finace">Finace</h2>
+    <h2 class="admin">Admin</h2>
+    <h2 class="hrc">HR</h2>
+</div>
+
+<div class="card">
+    <p>para</p>
+    <h1>H1 tag</h1>
+    <div class="para">
+        <p>para2</p>
+    </div>
+</div>
+</body>
+</html>

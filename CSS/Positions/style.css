@@ -1,0 +1,67 @@
+/*
+What is position:
+position in CSS to control an element should apper on the web [page
+
+by using position: property
+top,bottom,left,right
+
+by defaylt, HTML elements appera one after one
+
+types of position:
+1. static
+2. relative
+3. absolute
+4. fixed
+5. sticky
+
+1. static
+default position of every element in HTML 
+
+
+*/
+
+.box{
+    width:100px;
+    height: 100px;
+    background-color: aqua;
+}
+.static{
+    position: static;
+    top:100px;
+}
+.relative{
+    position: relative;
+    top:100px;
+}
+.absolute{
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+.parent{
+    height: 300px;
+    background-color: blueviolet;
+    position: relative;
+    z-index: 1000;
+}
+.fixed{
+    position:fixed;
+    top:200px;
+    left:500px;
+}
+.sticky{
+    position: sticky;
+    top: 300px;
+    left: 700px;
+}
+
+header{
+    height: 100px;
+    background-color: aqua;
+    margin-bottom: 30px;
+    position: fixed;
+    width: 80%;
+}
+img{
+    margin-top: 100px;
+}

@@ -1,0 +1,55 @@
+/*
+1. flex layout
+2. grid
+3. float
+
+1. flex:
+
+before flex::after
+1. we ara going to arrange the elements by using float either left or right positions
+2. alignmentwas difficulty at that time
+3. centeranig the elements was headache
+
+aftter flex:
+1. easy alignment the elements(horizantal+ vertical direction
+2. responsive design is very isy to create
+3. 3. clean and less code.
+
+
+
+    1. flex container(paranet element)
+    disply:flex-----items will disply in a row direction
+    flex-dierction: row|row-reverse|column|column-recerse
+    justify-content
+    align-items
+    flex-wrap:
+    gap:
+
+    2. flex item
+    flex-grow:-----
+    flex-shrink:
+    flex-basis:----set width for an child element
+    order:
+*/
+*{
+    margin: 0px;
+}
+.box{
+    width: 210px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+.container{
+    display: flexbox;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    background-color: aqua;
+    /* height: 300px; */
+    flex-wrap: wrap;
+    /* column-gap: 100px; */
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box2,.box3{
+            display: inline-block;
+        } */
+         .box{
+    width: 210px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: 150px 200px; */
+    /* row-gap: 100px; */
+}
+.box1{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+    </style>
+</head>
+<body>
+    <!--
+    Grid is 2-D layout, used to create rows and columns on wepgaes
+    
+    before grid:
+    -float
+    -inline-block
+    -flexbox(1-D)
+    
+    -->
+
+    <div class="container">
+        <div class="box box1">Box-1</div>
+        <div class="box box2">Box-2</div>
+        <div class="box box3">Box-3</div>
+         <div class="box box1">Box-1</div>
+        <div class="box box2">Box-2</div>
+        <div class="box box3">Box-3</div>
+         <div class="box box1">Box-1</div>
+        <div class="box box2">Box-2</div>
+        <div class="box box3">Box-3</div>
+    </div>
+</body>
+</html>

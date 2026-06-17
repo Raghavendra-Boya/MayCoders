@@ -1,0 +1,58 @@
+/*
+transform:
+is ude to change the shape, position,size,angle of an elemet without effecting the normal flow of documnet
+
+why:
+1. attractive UI
+2. interactive effects
+3. smoth over effects
+
+1. translate()----->moves element from its oroginal position
+syntax: 
+transform:translate(x,y)
+
+2. scale()---->change size of element
+syntax: 
+transform:scale(1)
+
+3. rotate()--->rotate teh element
+synatax: 
+transform:rotate(10deg);
+
+
+transitions: 
+create smooth animations b/w tolsd state and new state
+
+witout transition:
+effect changes sunddenly
+
+transition-property: 
+
+*/
+
+.box{
+width: 100px;
+height: 100px;
+background-color: tomato;
+transition-property: transform;
+transition-duration: 3s;
+transition-timing-function: ease-out;
+transition-delay: 3s;
+
+
+}
+.box:hover{
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 30px black;
+
+    transform: scaleY(1.3);
+    transform: rotateY(120deg);
+    background-color: red;
+
+    /* shorthand property: 
+    transfrom: translate() sclae() rotate();
+    
+    */
+    /* transform: translateY(-10px) scale(1.1) rotate(45deg); */
+
+}

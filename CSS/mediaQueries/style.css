@@ -1,0 +1,106 @@
+/*
+what is Media Query:  
+media queries are allow us to apply different styles based on the device width, resolution, orientation
+
+syntax::
+
+@media condition{
+
+slector{
+
+peoperty::-ms-value
+
+}
+
+}
+
+without media queries: 
+1. layout becomes messy
+2. poor UI
+
+with Media queries:
+1. Better UI
+2. Responsive design
+3. mobile friendly websites
+4. support different devices
+
+break points: 
+desktop: min-width: 1440px
+laptop: min-width: 1024px to max-width:1439px
+tablet: min-width:768px max-width:1023px
+mobile: 0px to 767px
+*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: #222;
+    padding: 20px 50px;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.nav-links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.logo{
+    font-size:30px ;
+    font-weight: bold;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+}
+.menu-btn,#menu{
+    display: none;
+}
+
+/*===========Headr Media Queries========*/
+
+@media (max-width:1024px){
+    header{
+        padding: 20px;
+    }
+    .navbar{
+        flex-direction: column;
+        text-align: center;
+    }
+   
+}
+
+@media (max-width:768px){
+    header{
+        padding: 20px; 
+    }
+    .navbar{
+        flex-direction: row;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .nav-links{
+        width: 100%;
+        height: 0px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top:70px;
+        left:0px;
+        overflow: hidden;
+        transition: height 1s ease;
+
+    }
+    #menu:checked ~ .nav-links{
+        height: 300px;
+    }
+}

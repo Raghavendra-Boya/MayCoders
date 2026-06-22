@@ -81,3 +81,49 @@ animatiion-name:
         transform: rotate(360deg);
     }
 }
+
+
+.typing{
+    width: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s infinite steps(40);
+    border-right: 4px solid red;
+}
+
+@keyframes typing{
+    from{
+        width: 0%;
+    }
+    to{
+        width:600px;
+    }
+}
+.text{
+    background-color: cadetblue;
+    animation: scroll 10s linear infinite;
+    display: inline-block;
+}
+@keyframes scroll{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(500%);
+    }
+}
+
+/*
+-background-color:color name;
+-background-image:url("path")
+-background-repeat:
+-background-position:
+-backgromt-size:
+background-attachment:
+-backgroun:
+-linear-gradient
+-radical-gradiant
+-conic-gradient
+
+
+*/
